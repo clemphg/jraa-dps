@@ -2,8 +2,8 @@
 # -----------------
 # Dataset and normalization configuration
 
-path_data: ""
-id_patients_path: ""
+path_data: "${PATH_DATA}"
+id_patients_path: "${ID_PATIENTS_PATH}"
 
 nb_slices: 128
 img_dim: 256
@@ -14,7 +14,6 @@ use_act: true
 use_atn: true
 clip_act: 100000
 clip_atn: 0.025
-pixel_size_mu_map: null
 
 norm_act:
   sqrt_order: 3

@@ -43,6 +43,8 @@ def main(args):
     proj_cfg = load_yaml(args.proj)
     infer_cfg = load_yaml(args.infer)
 
+    print(data_cfg)
+
     device = torch.device(infer_cfg.get("device", "cuda" if torch.cuda.is_available() else "cpu"))
     print(f"\nUsing device: {device}")
 

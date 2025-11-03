@@ -2,7 +2,7 @@
 # ---------------------
 # PET projector geometry and system model configuration.
 
-tau: 1.0
+tau: 1.0e-5
 use_tof: false
 
 params:

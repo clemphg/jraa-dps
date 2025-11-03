@@ -3,6 +3,7 @@ import yaml
 import shutil
 import numpy as np
 from typing import Any, Dict
+from dotenv import load_dotenv
 
 import torch
 from torch.utils.data import DataLoader
@@ -15,10 +16,14 @@ from src.utils.data.activity_attenuation_dataset import ActivityAttenuationDatas
 # Utilities
 # -------------------------------------------------------------------------
 
-def load_yaml(path: str) -> Dict[str, Any]:
+def load_yaml(path: str, env_path: str = "./.env") -> Dict[str, Any]:
+    """Load YAML config file with environment variable expansion."""
+    load_dotenv(dotenv_path=env_path, override=False)
     with open(path, "r") as f:
-        return yaml.safe_load(f)
-
+        raw_yaml = f.read()
+    expanded_yaml = os.path.expandvars(raw_yaml)
+    cfg = yaml.safe_load(expanded_yaml)
+    return cfg
 
 def merge_configs(data_cfg, model_cfg, train_cfg):
     """Combine config dicts into a single structure."""

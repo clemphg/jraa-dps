@@ -13,4 +13,4 @@ sampler:
   xi: 0.5
   norm_grad: true
 
-weights_path: ""
+weights_path: "${WEIGHTS_PATH}"
