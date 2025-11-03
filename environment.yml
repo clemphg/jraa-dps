@@ -1,0 +1,15 @@
+name: jraadpsenv
+channels:
+  - conda-forge
+
+dependencies:
+  - python=3.11
+  - pytorch
+  - torchvision
+  - cupy
+  - parallelproj
+  - numpy
+  - pywavelets
+  - pyyaml
+  - tensorboard
+  - torchio

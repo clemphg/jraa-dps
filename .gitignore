@@ -1,4 +1,5 @@
-./data/
-./src/
-./scripts/
-./notebooks/
+data/*
+notebooks/*
+results/*
+
+**__pycache__*/

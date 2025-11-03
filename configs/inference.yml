@@ -1,0 +1,16 @@
+# configs/inference.yml
+# ---------------------
+# Inference parameters and hardware setup
+
+device: "cuda"
+num_subsets: 10
+fwhm: 4
+bckg_pet: 0
+display_progress: true
+
+sampler:
+  zeta: 1
+  xi: 0.5
+  norm_grad: true
+
+weights_path: ""

@@ -1,0 +1,28 @@
+# configs/model.yml
+# -----------------
+# Model architecture configuration
+
+params:
+  image_size: null
+  in_channels: 16         # (2 modalities * 8 wavelet channels)
+  model_channels: 64
+  out_channels: 16
+  num_res_blocks: 2
+  attention_resolutions: [1000]
+  dropout: 0.1
+  channel_mult: [1, 2, 2, 4, 4, 4]
+  conv_resample: true
+  dims: 3
+  num_classes: null
+  use_checkpoint: false
+  use_fp16: false
+  num_heads: 1
+  num_head_channels: -1
+  num_heads_upsample: -1
+  use_scale_shift_norm: false
+  resblock_updown: true
+  use_new_attention_order: false
+  num_groups: 32
+  bottleneck_attention: false
+  resample_2d: false
+  additive_skips: false

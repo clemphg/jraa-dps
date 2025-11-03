@@ -1,0 +1,30 @@
+# configs/data.yml
+# -----------------
+# Dataset and normalization configuration
+
+path_data: ""
+id_patients_path: ""
+
+nb_slices: 128
+img_dim: 256
+batch_size: 2
+num_workers: 6
+
+use_act: true
+use_atn: true
+clip_act: 100000
+clip_atn: 0.025
+pixel_size_mu_map: null
+
+norm_act:
+  sqrt_order: 3
+  img_min: 0
+  img_max: 100000
+  new_min: -1
+  new_max: 2
+
+norm_atn:
+  img_min: 0
+  img_max: 0.025
+  new_min: -1
+  new_max: 1

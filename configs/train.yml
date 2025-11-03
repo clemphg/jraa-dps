@@ -1,0 +1,25 @@
+# configs/train.yml
+# -----------------
+# Training configuration (hyperparameters, paths, etc.)
+
+seed: 123
+
+train:
+  epochs: 1000
+  loss: "MSELoss"
+  grad_clip: null
+  ema_rate: 0.9
+  save_root: "results/models/"
+  display_progress: true
+
+optimizer:
+  type: "AdamW"
+  params:
+    lr: 1.0e-5
+
+scheduler:
+  type: "ReduceLROnPlateau"
+  params:
+    mode: "min"
+    factor: 0.1
+    patience: 40

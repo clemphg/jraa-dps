@@ -1,0 +1,18 @@
+# configs/projector.yml
+# ---------------------
+# PET projector geometry and system model configuration.
+
+tau: 1.0
+use_tof: false
+
+params:
+  voxel_shape: [2.0, 1.953125, 1.953125]     # [z, y, x] in mm
+  volume_shape: [128, 256, 256]              # [z, y, x]
+  num_rings: 48
+  max_ring_difference: 44
+  diameter: 700.0
+  num_sides: 300
+  lor_radial_trim: 30
+  fwhm: 4.0
+  use_tof: true
+  num_tofbins: 13
