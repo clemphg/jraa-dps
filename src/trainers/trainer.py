@@ -2,7 +2,7 @@
 trainer_base.py
 ===============
 
-Defines a generic Trainer class that provides:
+Generic Trainer class that provides:
 - Common training loop
 - Gradient clipping
 - EMA parameter tracking

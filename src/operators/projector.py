@@ -2,8 +2,8 @@
 PET Projector (TOF and Non-TOF)
 ===============================
 
-This module defines a PET projector class that supports both Time-of-Flight (TOF)
-and non-TOF forward and back projections using the ParallelProj library:
+PET projector class that supports both Time-of-Flight (TOF) and non-TOF forward 
+and back projections with optional subsets using the ParallelProj library:
 https://parallelproj.readthedocs.io/en/stable/.
 
 It also defines PyTorch-compatible autograd wrappers for integrating the projector

@@ -2,7 +2,7 @@
 Diffusion Sampler (Base Class)
 =======================================
 
-Defines the generic forward and reverse diffusion steps shared across
+Generic forward and reverse diffusion steps shared across
 derived samplers (e.g. wavelet or joint scatter samplers).
 """
 

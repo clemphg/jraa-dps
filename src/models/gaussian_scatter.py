@@ -2,7 +2,7 @@
 Gaussian Scatter Model
 ======================
 
-This module defines a differentiable scatter correction model for PET sinograms.
+Defines a differentiable scatter correction model for PET sinograms.
 The model implements a parameterized scatter distribution, with support for 
 different projection geometries and Time-of-Flight (TOF) bins.
 
@@ -17,7 +17,7 @@ import torch.nn.functional as F
 class GaussianScatter(nn.Module):
     """Gaussian-shaped scatter model with learnable amplitude, mean, and std.
 
-    This model parameterizes the scatter profile in each projection as a Gaussian
+    The scatter profile is parametrized in each projection as a Gaussian
     function along the radial axis, with learnable parameters:
     amplitude (a), mean (b), and width (c). The model supports optional TOF bins
     and includes smoothness regularization to enforce spatial continuity.

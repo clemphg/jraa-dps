@@ -2,10 +2,10 @@
 3D Wavelet Transform Operators
 ==============================
 
-This module implements differentiable 3D discrete wavelet transform (DWT)
-and inverse discrete wavelet transform (IDWT) for volumetric data (e.g., 3D PET).
-It also defines a high-level `Wavelet` operator wrapper that integrates DWT/IDWT
-within the project's operator framework.
+Differentiable 3D discrete wavelet transform (DWT) and inverse discrete wavelet 
+transform (IDWT) for volumetric data (e.g., 3D PET). Also defines a high-level 
+`Wavelet` operator wrapper that integrates DWT/IDWT within the project's operator 
+framework.
 
 Based on: https://github.com/pfriedri/wdm-3d
 """

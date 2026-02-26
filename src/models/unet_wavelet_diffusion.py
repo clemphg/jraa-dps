@@ -2,14 +2,9 @@
 UNet + Wavelet/Diffusion Utilities
 ==================================
 
-Cleaned, documented implementation of a UNet architecture with attention,
-timestep embeddings, residual blocks, and optional multi-device decoding,
-together with utility layers and helpers commonly used in diffusion models.
-
-Behavior is preserved 1:1 with the original:
-- Identical function signatures and defaults
-- Identical tensor shapes and math
-- Identical side effects (e.g., print statements)
+Implementation of a UNet architecture with attention, timestep embeddings, 
+residual blocks, and optional multi-device decoding, together with utility 
+layers and helpers commonly used in diffusion models.
 
 Notes
 -----
